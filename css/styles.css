@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 150%;
+}
+
+/* Mobile Layout */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 3rem;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), url("../img/picnic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1.5em;
+}
+
+
+.attendees {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hide or show an element */
+.hide {
+  display: none;
+}
+
+header {
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-family: "Oswald", sans-serif;
+  color: tomato;
+  -webkit-text-stroke: 0.1px #fff; 
+}
+
+.add-guest,
+.guest-list-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-guest {
+  margin-top: 1em;
+}
+
+.add-guest label {
+  margin-bottom: 1em;
+}
+
+.add-guest input {
+  padding: 0.25em;
+}
+
+.fa-envelope {
+  color: tomato;
+}
+
+button {
+  align-self: center;
+  margin: 2em 0;
+  padding: 0.5em 1.5em;
+  color: #fff;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  background-color: tomato;
+  border: 0.5px solid #fff;
+}
+
+button:hover {
+  filter: brightness(85%);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+input {
+  border: 1px solid #292929;
+}
+
+input:focus {
+  border: 2px solid;
+  background-color: mintcream;
+}
+
+.guest-list li {
+  list-style-position: inside;
+  list-style-image: url("../img/man.png");
+}
+
+.assigned-items li {
+  margin: 0.45em 0;
+  background-color: #fff;
+  color: tomato;
+  font-weight: bold;
+  color: 292929;
+}
+
+.guestPotluck {
+  color: #292929;
+}
+
+.guest-list,
+.assigned-items {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+.guest-list li,
+.assigned-items li {
+  padding: 0.5em 0;
+}
+
+.items-list-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1em 0;
+}
+
+.assigned-items {
+  width: 100%;
+  max-width: 400px;
+}
+
+footer {
+  width: 100%;
+  padding: 2em 0;
+}
+
+/* Desktop & Tablets Layout */
+@media screen and (min-width: 800px) {
+  .container {
+    justify-content: space-between;
+  }
+
+  .guest-list {
+    width: 70%;
+  }
+}
