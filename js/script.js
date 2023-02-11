@@ -9,7 +9,9 @@ const assignButton = document.querySelector(".assign");
 const assignedItems = document.querySelector(".assigned-items");
 
 //Create the List of Guests
-addGuestButton.addEventListener("click", function () {
+addGuestButton.addEventListener("click", function (e) {
+  e.preventDefault();
+  guestInput.focus();
   const guest = guestInput.value;
   if (guest !== "") {
     addToList(guest);
